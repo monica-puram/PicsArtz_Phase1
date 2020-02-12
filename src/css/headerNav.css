@@ -1,0 +1,41 @@
+.navbar{
+	background: rgb(243, 226, 127);
+	
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: black;
+	opacity: 1;
+	margin-left: 10px;
+	background-color: rgb(245, 196, 62);
+	border-color: rgb(245, 196, 62);
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(112, 19, 19);
+}
+.navbar-toggler{
+	float: right;
+}
+
+.dropdown{
+	color: black;
+	opacity: 1;
+	margin-left: 10px;
+	background-color: rgb(245, 196, 62);
+	border-color: rgb(245, 196, 62);
+
+}
+
+.dropdown :hover{	
+	color: rgba(255,255,255,.75);
+}
+.navBrand {
+  text-decoration: none;
+  margin: 0;
+  padding:0;
+  float: left;
+  width: 100%;
+}
+
+.logo{
+	height: 50px;
+}
