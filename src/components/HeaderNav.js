@@ -1,48 +1,80 @@
 import React from 'react';
-import {Navbar, Nav, Dropdown, Button, ButtonGroup, Row, Col} from 'react-bootstrap';
-import { IoIosHome } from 'react-icons/io';
-import "../css/headerNav.css";
 import Logo from '../images/PicsArtzLogo.png';
+import '../css/headerNav.css';
+import {IoIosMenu,IoIosHome, IoIosArrowDropdown} from 'react-icons/io';
 
-class HeaderNav extends React.Component{
-	render() { 
+function HeaderNav(){
 		return(
-				<Navbar collapseOnSelect expand="md xs" as = {Row} className='navbar' variant="dark">
-						<Col lg={{ size: 3, offset: 1 }} md="2" sm = "4" xs="4">
-							<Navbar.Brand className="navBrand" href="/home"><img src={Logo} alt="PicsArtzLogo" className="logo"/></Navbar.Brand>
-						</Col>
-						<Col lg="8" md="10" sm="8" xs="8">
-							<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-							<Navbar.Collapse id="responsive-navbar-nav">
-							<Nav className="mr-auto">
-								<Nav.Link as = {Button} href="/home">Home <IoIosHome/></Nav.Link>
-								<Dropdown as={ButtonGroup}  >
-								<Button as = "a" className = "dropdown" href = "/gallery">Our Gallery</Button>
-								<Dropdown.Toggle className = "dropdown" split id="dropdown-custom-2" />
-								<Dropdown.Menu>
-									<Dropdown.Item href = "#">Best Captures</Dropdown.Item>
-									<Dropdown.Divider />
-									<Dropdown.Item href = "#">Candid</Dropdown.Item>
-									<Dropdown.Divider />
-									<Dropdown.Item href = "#">Wide angle</Dropdown.Item>
-                                    <Dropdown.Divider />
-									<Dropdown.Item href = "#">Promos</Dropdown.Item>
-                                    <Dropdown.Divider />
-									<Dropdown.Item href = "#">Video Invites</Dropdown.Item>
-                                    <Dropdown.Divider />
-									<Dropdown.Item href = "#">Photo Shoot</Dropdown.Item>
-								</Dropdown.Menu>
-								</Dropdown>
-                                <Nav.Link as = {Button} href="/careers">Careers</Nav.Link>
-								<Nav.Link as = {Button} href="/about">About Us</Nav.Link>
-								<Nav.Link as = {Button}  href="/contactUs">Contact Us</Nav.Link>
-
-							</Nav>
-							</Navbar.Collapse>
-						</Col>
-				</Navbar>
-			)
-	}
+			<div className= 'navbar'>
+				<div className = 'logo col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3'>
+					<a href='/home'><span><img src={Logo} alt="PicsArtzLogo" className="logo"/></span></a>
+				</div>
+				<button className='hamburger' onClick={()=>{
+						toggleNav();
+					}}>
+					<span><IoIosMenu/></span>
+				</button>
+				
+				<div className='nav col-6 col-sm-6 col-md-6 col-lg-9 col-xl-9' id='nav'>
+					<a href="#" className="closebtn" onClick={()=>{
+						toggleNav();
+					}}>&times;</a>
+					<ul>
+						<li className='navLink'>
+							<a href='/home'>Home <IoIosHome/></a>
+						</li>
+						<li className='navLink' id='dropdown'>
+							<a href='/gallery'>Our gallery <IoIosArrowDropdown/></a>
+							
+								<ul className='navDropdown'>
+									<li className='dropdownLink'>
+									<a href='/gallery'>Best Captures</a>
+									</li>
+									<li className='dropdownLink'>
+									<a href='/gallery'>Candid</a>
+									</li>
+									<li className='dropdownLink'>
+									<a href='/gallery'>Wide Angle</a>
+									</li>
+									<li className='dropdownLink'>
+									<a href='/gallery'>Promos</a>
+									</li>
+									<li className='dropdownLink'>
+									<a href='/gallery'>Video Invites</a>
+									</li>
+									<li className='dropdownLink'>
+									<a href='/gallery'>Photo shoot</a>
+									</li>
+								</ul>
+							
+						</li>
+						
+						<li className='navLink'>
+							<a href='/gallery'>Careers</a>
+						</li>
+						<li className='navLink'>
+							<a href='/gallery'>About Us</a>
+						</li>
+						<li className='navLink'>
+							<a href='/gallery'>Contact Us</a>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+			
+		);
+	
 }
 
 export default HeaderNav;
+
+function toggleNav() {
+	var x = document.getElementById("nav");
+	if (x.className === "nav col-6 col-sm-6 col-md-6 col-lg-9 col-xl-9") {
+		x.className += " responsive";
+	}
+	else {
+		x.className = "nav col-6 col-sm-6 col-md-6 col-lg-9 col-xl-9";
+	}
+}
