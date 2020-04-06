@@ -1,10 +1,13 @@
 import React from 'react';
+import HeaderContent from './components/HeaderContent';
 
 
 class Home extends React.Component{
     render(){
         return(
-            <div>Home</div>
+            <React.Fragment>
+                <HeaderContent/>
+            </React.Fragment>
         )
     }
 }

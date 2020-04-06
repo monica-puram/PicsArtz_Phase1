@@ -1,5 +1,5 @@
 .navbar{
-    background-color: rgb(252, 188, 71);
+    background-color: rgba(252, 188, 71,0.5);
     height: 60px;
     width: 100%;
 }
@@ -135,4 +135,63 @@
         color: rgb(250, 245, 236);
       }
   }
-  
+//Header Content styles
+
+.headerContent{
+    .banner{
+        img{
+            background-repeat: no-repeat;
+            width: 100%;
+            height: auto;
+        }
+    }
+    .threeColGrid{
+        border: 1px solid rgb(236,143,37);
+        margin-top: 30px;
+        display: inline-block;
+        .column1{
+            float: left;
+        }
+        .column2{
+            float: left;
+            padding: 5px;
+            img{
+                width: 100%;
+                height: 240px;
+            }
+        }
+        .column3{
+            float: left;
+            padding: 5px;
+            iframe{
+                width: 100%;
+                height: 240px;
+            }
+        }
+    }
+}
+
+//Footer styles
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color:  rgba(252, 188, 71,0.5);
+    margin-top: 30px;
+    .footerContent{
+        text-align: center;
+        padding-top: 130px;
+        a{
+            color: rgb(236, 143, 37);
+            font-size: xx-large;
+            
+        }
+        .copyRight{
+            color: rgb(236, 143, 37);
+            font-size: small;
+            a{
+                color: rgb(236, 143, 37);
+                font-size: small;
+            }
+        }
+    }
+}

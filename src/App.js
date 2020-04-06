@@ -1,7 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as StaticRouter, Route, Switch} from 'react-router-dom';
-import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './Home';
 import About from './About';
@@ -9,13 +8,14 @@ import Gallery from './Gallery';
 import ContactUs from './ContactUs';
 import Careers from './Careers';
 import './App.css';
+import HeaderNav from './components/HeaderNav';
 
 class App extends React.Component {
 
   render() {
     return(
       <React.Fragment>
-        <Header/>
+        <HeaderNav/>
             <StaticRouter>
               <Switch>              
                 <Route exact path = '/' component = {Home}/>
