@@ -170,6 +170,7 @@
         .column2{
             float: left;
             padding: 5px;
+            z-index: -1;
             img{
                 width: 100%;
                 height: 240px;
@@ -178,6 +179,7 @@
         .column3{
             float: left;
             padding: 5px;
+            z-index: -1;
             iframe{
                 width: 100%;
                 height: 240px;

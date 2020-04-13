@@ -186,6 +186,7 @@
 .headerContent .threeColGrid .column2 {
   float: left;
   padding: 5px;
+  z-index: -1;
 }
 
 .headerContent .threeColGrid .column2 img {
@@ -196,6 +197,7 @@
 .headerContent .threeColGrid .column3 {
   float: left;
   padding: 5px;
+  z-index: -1;
 }
 
 .headerContent .threeColGrid .column3 iframe {
