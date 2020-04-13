@@ -15,7 +15,7 @@ function HeaderContent(){
                     <img src= 'http://localhost:3000/thumbnail1.jpg' alt='thumbnail'></img>
                 </div>
                 <div className='column3 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4'>
-                    <iframe src='https://www.youtube.com/embed/jBrttJVhv-4'></iframe>
+                    <iframe src='https://www.youtube.com/embed/jBrttJVhv-4' title='preWed'></iframe>
                 </div>
             </div>
 

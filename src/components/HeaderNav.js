@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../images/PicsArtzLogo.png';
-import '../css/headerNav.css';
-import {IoIosMenu,IoIosHome, IoIosArrowDropdown} from 'react-icons/io';
+import '../css/styles.css';
+import {IoIosMenu,IoIosHome, IoIosArrowDropdown, IoIosContacts, IoIosBusiness, IoIosPhonePortrait} from 'react-icons/io';
 
 function HeaderNav(){
 		return(
@@ -50,13 +50,13 @@ function HeaderNav(){
 						</li>
 						
 						<li className='navLink'>
-							<a href='/gallery'>Careers</a>
+							<a href='/gallery'>Careers <IoIosContacts/></a>
 						</li>
 						<li className='navLink'>
-							<a href='/gallery'>About Us</a>
+							<a href='/gallery'>About Us <IoIosBusiness/></a>
 						</li>
 						<li className='navLink'>
-							<a href='/gallery'>Contact Us</a>
+							<a href='/gallery'>Contact Us <IoIosPhonePortrait/></a>
 						</li>
 					</ul>
 					
