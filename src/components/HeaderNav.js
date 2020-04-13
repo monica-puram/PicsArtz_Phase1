@@ -16,7 +16,7 @@ function HeaderNav(){
 				</button>
 				
 				<div className='nav col-6 col-sm-6 col-md-6 col-lg-9 col-xl-9' id='nav'>
-					<a href="#" className="closebtn" onClick={()=>{
+					<a href="" className="closebtn" onClick={()=>{
 						toggleNav();
 					}}>&times;</a>
 					<ul>
