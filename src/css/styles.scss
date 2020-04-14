@@ -312,3 +312,39 @@
         grid-row: 2;
 }
 }
+//About Us styles
+
+.aboutUs{
+    margin-top: 90px;
+    width: 100%;
+    
+    .aboutUsGrid{
+        border: 1px solid rgb(236, 143, 37);
+        border-radius: 5px;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 300px;
+        grid-gap: 10px;
+        div{
+            border: 1px solid rgb(236, 143, 37);
+            border-radius: 5px;
+            height: auto;
+            text-align: center;
+        }
+        img{
+            width: 100%;
+            height: 100%; 
+        }
+    }
+    
+    @media screen and (max-width: 425px) {
+        .aboutUsGrid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-auto-rows: 200px;
+            grid-gap: 10px;
+        }
+    }
+
+}

@@ -366,4 +366,44 @@
     grid-row: 2;
   }
 }
+
+.aboutUs {
+  margin-top: 90px;
+  width: 100%;
+}
+
+.aboutUs .aboutUsGrid {
+  border: 1px solid #ec8f25;
+  border-radius: 5px;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 300px;
+  grid-gap: 10px;
+}
+
+.aboutUs .aboutUsGrid div {
+  border: 1px solid #ec8f25;
+  border-radius: 5px;
+  height: auto;
+  text-align: center;
+}
+
+.aboutUs .aboutUsGrid img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 425px) {
+  .aboutUs .aboutUsGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 200px;
+    grid-gap: 10px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
