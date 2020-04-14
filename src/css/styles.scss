@@ -349,6 +349,7 @@
 
 }
 
+// Contact us
 .form-parent-div {
     margin-top: 60px;
     border-radius: 5px;
@@ -410,13 +411,4 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
-.galleryGrid div:nth-child(4) {
-    grid-column: 1;
-    grid-row: 1;
-}
-.galleryGrid div:nth-child(3) {
-    display: block;
-    grid-column: 1/2;
-    grid-row: 2;
 }
