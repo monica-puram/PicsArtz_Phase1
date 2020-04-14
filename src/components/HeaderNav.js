@@ -50,13 +50,13 @@ function HeaderNav(){
 						</li>
 						
 						<li className='navLink'>
-							<a href='/gallery'>Careers <IoIosContacts/></a>
+							<a href='/careers'>Careers <IoIosContacts/></a>
 						</li>
 						<li className='navLink'>
-							<a href='/gallery'>About Us <IoIosBusiness/></a>
+							<a href='/about'>About Us <IoIosBusiness/></a>
 						</li>
 						<li className='navLink'>
-							<a href='/gallery'>Contact Us <IoIosPhonePortrait/></a>
+							<a href='/contactus'>Contact Us <IoIosPhonePortrait/></a>
 						</li>
 					</ul>
 					
