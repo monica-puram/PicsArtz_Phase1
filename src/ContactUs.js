@@ -31,12 +31,13 @@ class ContactUs extends React.Component{
             }).catch(error =>{
                 console.log(error);
             })
+        document.getElementById("formId").reset();
     }
 
     render(){
         return(
             <div className="form-parent-div">
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit} id="formId">
                 <div>
                     <label htmlFor="fname"> First Name:
                     <input type="text" id="fname" pattern="[a-zA-Z]{2,}" name="fname" value={this.state.value} onChange={this.handleChange} required/>
@@ -67,7 +68,7 @@ class ContactUs extends React.Component{
 
                 <div>
                     <label htmlFor="comments"> Comments:
-                    <textarea value={this.state.value} onChange={this.handleChange} />
+                    <textarea name="comments" value={this.state.value} onChange={this.handleChange} />
                     </label>
                 </div>
                 
