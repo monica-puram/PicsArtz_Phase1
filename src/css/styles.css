@@ -238,11 +238,8 @@
 }
 
 .galleryGrid {
-  border: 2px solid #f76707;
-  border-radius: 5px;
   margin-top: 90px;
   padding: 20px;
-  background-color: #fff4e6;
 }
 
 .galleryGrid > div {
@@ -374,8 +371,6 @@
 }
 
 .aboutUs .aboutUsGrid {
-  border: 1px solid #ec8f25;
-  border-radius: 5px;
   padding: 20px;
   display: -ms-grid;
   display: grid;
@@ -412,9 +407,11 @@
   margin-top: 60px;
   border-radius: 5px;
   padding: 50px;
+  /* Modal Content */
+  /* The Close Button */
 }
 
-input[type="text"], [type="email"] {
+.form-parent-div input[type="text"], .form-parent-div [type="email"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -426,7 +423,7 @@ input[type="text"], [type="email"] {
   font: 1rem 'Fira Sans', sans-serif;
 }
 
-input[type="select"] {
+.form-parent-div input[type="select"] {
   width: 25%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -438,7 +435,7 @@ input[type="select"] {
   font: 1rem 'Fira Sans', sans-serif;
 }
 
-input[type="tel"] {
+.form-parent-div input[type="tel"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -450,21 +447,21 @@ input[type="tel"] {
   font: 1rem 'Fira Sans', sans-serif;
 }
 
-input:invalid + span:after {
+.form-parent-div input:invalid + span:after {
   position: absolute;
   content: '✖';
   padding-left: 5px;
   color: #8b0000;
 }
 
-input:valid + span:after {
+.form-parent-div input:valid + span:after {
   position: absolute;
   content: '✓';
   padding-left: 5px;
   color: #009000;
 }
 
-textarea {
+.form-parent-div textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -475,19 +472,127 @@ textarea {
           box-sizing: border-box;
 }
 
-.galleryGrid div:nth-child(4) {
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 1;
-  grid-row: 1;
+.form-parent-div .modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
-.galleryGrid div:nth-child(3) {
+.form-parent-div .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  margin-top: 10%;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.form-parent-div .modal-content #dialogHeading {
+  color: green;
+  border-bottom: 1px solid #f2eeed;
+  width: 70%;
+}
+
+.form-parent-div .modal-content #dialogHeading.failure {
+  color: red;
+}
+
+.form-parent-div .modal.modal-open {
   display: block;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 2;
-  grid-row: 2;
+}
+
+.form-parent-div .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  margin-left: 95%;
+}
+
+.form-parent-div .close:hover,
+.form-parent-div .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.careers {
+  margin-top: 90px;
+}
+
+.careers h1 {
+  text-align: center;
+  color: #ec8f25;
+}
+
+.careers .panel {
+  height: auto;
+  border: 1px solid #ec8f25;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  -webkit-transition: margin;
+  transition: margin;
+}
+
+.careers .panel .location {
+  color: #ec8f25;
+  font-size: small;
+}
+
+.careers .panel a {
+  color: #ec8f25;
+}
+
+.careers .panel a:hover {
+  text-decoration: none;
+}
+
+.careers .panel:hover {
+  margin: 15px;
+  background-color: rgba(252, 188, 71, 0.5);
+}
+
+.careersForm {
+  margin-top: 90px;
+}
+
+.careersForm button {
+  margin: 5px;
+  margin-top: 10px;
+  background-color: #ec8f25;
+  color: #faf5ec;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.careersForm input[type="text"] {
+  display: inline-block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 4px;
+  margin: 4px;
 }
 /*# sourceMappingURL=styles.css.map */
