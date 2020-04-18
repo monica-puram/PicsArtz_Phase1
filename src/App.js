@@ -7,6 +7,7 @@ import About from './About';
 import Gallery from './Gallery';
 import ContactUs from './ContactUs';
 import Careers from './Careers';
+import CareersForm from './components/CareersForm';
 import './App.css';
 import HeaderNav from './components/HeaderNav';
 
@@ -23,6 +24,7 @@ class App extends React.Component {
                 <Route exact path = '/gallery' component = {Gallery}/>
                 <Route path = '/contactUs' component = {ContactUs}/>
                 <Route path = '/careers' component = {Careers}/>
+                <Route path = '/careersApply' component = {CareersForm}/>
                 <Route path = '/Home' component = {Home}/>
               </Switch>
             </StaticRouter>
