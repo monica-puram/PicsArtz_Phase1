@@ -25,11 +25,12 @@ class ContactUs extends React.Component{
         axios.post('http://localhost:3001/contactInfo', this.state)
             .then(response=>{
                 if(response.status === 200) 
-                    alert("Submitted!")
+                    toggleModal('Submitted successfully', 'Success!');
                 else
-                    alert("Error occurred while submitting information!")
+                    toggleModal("Error occurred while submitting information!", "Failed!");
             }).catch(error =>{
                 console.log(error);
+                toggleModal("Error occurred while submitting information! "+error, "Failed!");
             })
         document.getElementById("formId").reset();
     }
@@ -74,9 +75,33 @@ class ContactUs extends React.Component{
                 
                 <button type="submit">Submit</button>
                 </form>
+                <div id='dialog' className='modal'>
+                    <div className='modal-content'>
+                        <button className="close" onClick={()=>{
+                            toggleModal();
+                        }}>&times;</button>
+                        <h4 id="dialogHeading" className='heading'> </h4>
+                        <p id='dialogMsg'></p>
+                    </div>
+                </div>
           </div>
         )
     }
 }
 
+function toggleModal(dialogMsg, dialogHeading) {
+    var x = document.getElementById("dialog");
+    var y= document.getElementById('dialogMsg');
+    var z= document.getElementById('dialogHeading');
+    (dialogHeading==="Failed!") ? z.className+= " failure" : z.className = "heading";
+    
+	if (x.className === "modal") {
+        x.className += " modal-open";
+        y.innerHTML = dialogMsg;
+        z.innerHTML = dialogHeading;
+	}
+	else {
+		x.className = "modal";
+	}
+}
 export default ContactUs;

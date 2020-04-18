@@ -216,11 +216,8 @@
 }
 //Gallery styles
 .galleryGrid {
-    border: 2px solid #f76707;
-    border-radius: 5px;
     margin-top: 90px;
     padding: 20px;
-    background-color: #fff4e6;
 }
 
 .galleryGrid > div {
@@ -310,7 +307,7 @@
         display: block;
         grid-column: 1/2;
         grid-row: 2;
-}
+    }
 }
 //About Us styles
 
@@ -318,21 +315,19 @@
     margin-top: 90px;
     width: 100%;
     
-    .aboutUsGrid{
-        border: 1px solid rgb(236, 143, 37);
-        border-radius: 5px;
+    .aboutUsGrid {
         padding: 20px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 300px;
         grid-gap: 10px;
-        div{
+        div {
             border: 1px solid rgb(236, 143, 37);
             border-radius: 5px;
             height: auto;
             text-align: center;
         }
-        img{
+        img {
             width: 100%;
             height: 100%; 
         }
@@ -346,7 +341,6 @@
             grid-gap: 10px;
         }
     }
-
 }
 
 // Contact us
@@ -410,5 +404,114 @@
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
+    }
+
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+      
+      /* Modal Content */
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        margin-top: 10%;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%;
+        #dialogHeading {
+            color: green;
+            border-bottom: 1px solid #f2eeed;
+            width: 70%;
+        }
+        #dialogHeading.failure {
+            color: red;
+        }
+      }
+
+      .modal.modal-open {
+          display: block;
+      }
+
+      /* The Close Button */
+      .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        width: 20px;
+        height: 20px;
+        margin-left: 95%;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+}
+
+//Careers styles
+.careers{
+    margin-top: 90px;
+    h1{
+        text-align: center;
+        color: rgb(236, 143, 37);
+    }
+    .panel{
+        height: auto;
+        border: 1px solid rgb(236, 143, 37);
+        margin: 10px;
+        border-radius: 5px;
+        padding: 5px;
+        transition: margin;
+        .location{
+            color: rgb(236,143,37);
+            font-size: small;
+        }
+        a {
+            color: rgb(236, 143, 37);;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        &:hover{
+            margin: 15px;
+            background-color: rgba(252, 188, 71,0.5);
+        }
+    }
+}
+
+//Careers Form styles
+.careersForm{
+    margin-top: 90px;
+    button{
+        margin: 5px;
+        margin-top: 10px;
+        background-color: rgb(236, 143, 37);
+        color: rgb(250, 245, 236);
+        border-radius: 5px;
+        border: 1px solid transparent;
+    }
+
+    input[type="text"]{
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 4px;
+        margin: 4px;
     }
 }
