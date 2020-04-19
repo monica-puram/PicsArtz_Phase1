@@ -6,37 +6,37 @@ class Gallery extends React.Component{
         return(
             <div className='galleryGrid container'>
                 <div>
-                    <img src='http://localhost:3000/gallery1.jpg' alt='gallery'/>
+                    <img src='http://localhost:3000/imagestoconvert/gallery1_04182020.jpg' alt='gallery'/>
                 </div>
                 <div>
-                    <img src='http://localhost:3000/gallery2.jpg' alt='gallery'/>
+                    <img src='http://localhost:3000/imagestoconvert/gallery2_04182020.jpg' alt='gallery'/>
                 </div>
                 <div>
-                    <img src='http://localhost:3000/gallery3.jpg' alt='gallery'/>
+                    <img src='http://localhost:3000/imagestoconvert/gallery3_04182020.jpg' alt='gallery'/>
                 </div>
                 <div>
-                    <img src='http://localhost:3000/gallery4.jpg' alt='gallery'/>
+                    <img src='http://localhost:3000/imagestoconvert/gallery4_04182020.jpg' alt='gallery'/>
                 </div>
                 <div>
-                    <img src='http://localhost:3000/gallery5.jpg' alt='gallery'/>
+                    <img src='http://localhost:3000/imagestoconvert/gallery5_04182020.jpg' alt='gallery'/>
                 </div>
                 <div>
-                    <img src='http://localhost:3000/gallery6.jpg' alt='gallery'/>
+                    <img src='http://localhost:3000/imagestoconvert/gallery6_04182020.jpg' alt='gallery'/>
                 </div>
                 <div>
-                    <img src='http://localhost:3000/gallery7.jpg' alt='gallery'/>
+                    <img src='http://localhost:3000/imagestoconvert/gallery7_04182020.jpg' alt='gallery'/>
                 </div>
                 <div>
-                    <img src='http://localhost:3000/gallery8.jpg' alt='gallery'/>
+                    <img src='http://localhost:3000/imagestoconvert/gallery8_04182020.jpg' alt='gallery'/>
                 </div>
                 <div>
-                    <img src='http://localhost:3000/gallery10.jpg' alt='gallery'/>
+                    <img src='http://localhost:3000/imagestoconvert/gallery9_04182020.jpg' alt='gallery'/>
                 </div>
                 <div>
-                    <img src='http://localhost:3000/gallery1.jpg' alt='gallery'/>
+                    <img src='http://localhost:3000/imagestoconvert/gallery1_04182020.jpg' alt='gallery'/>
                 </div>
                 <div>
-                    <img src='http://localhost:3000/gallery2.jpg' alt='gallery'/>
+                    <img src='http://localhost:3000/imagestoconvert/gallery2_04182020.jpg' alt='gallery'/>
                 </div>
                 
             </div>
