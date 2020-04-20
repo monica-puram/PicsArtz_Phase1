@@ -151,8 +151,8 @@
         color: black;
       }
   }
-//Header Content styles
 
+//Header Content styles
 .headerContent{
     .banner{
         margin-top: 60px;
@@ -239,8 +239,6 @@
             width: 101%;
             height: 101%;
     }
-    
-    
 }
 .galleryGrid {
   display: grid;
@@ -346,7 +344,7 @@
 // Contact us
 .form-parent-div {
     margin-top: 90px;
-    
+
     input[type="text"], [type="email"] {
         width: 100%;
         padding: 12px 20px;
@@ -410,7 +408,6 @@
         border-radius: 5px;
         border: 1px solid transparent;
     }
-    
 }
 
 //Careers styles
@@ -426,10 +423,11 @@
         margin: 10px;
         border-radius: 5px;
         padding: 5px;
-        transition: margin;
         .location{
-            color: rgb(236,143,37);
             font-size: small;
+            color: #325050;
+            background: #fff;
+            font-family: 'Libre Baskerville', sans-serif;
         }
         a {
             color: rgb(236, 143, 37);;
@@ -438,7 +436,6 @@
             }
         }
         &:hover{
-            margin: 15px;
             background-color: rgba(252, 188, 71,0.5);
         }
     }
@@ -476,7 +473,6 @@
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
-    
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
@@ -500,14 +496,8 @@
     #dialogHeading.failure {
         color: red;
     }
-  }
-
-  .modal.modal-open {
-      display: block;
-  }
-
-  /* The Close Button */
-  .close {
+    /* The Close Button */
+    .close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
@@ -518,9 +508,45 @@
     background-color: transparent;
   }
   
-  .close:hover,
-  .close:focus {
+  .close:hover, .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+    }
   }
+
+.modal.modal-open {
+      display: block;
+}
+
+.headingContent {
+    padding-top: 20px;;
+    color: #325050;
+    background: #fff;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+.read_more  {
+    display: none;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    color: rgb(236, 143, 37);
+    &:active {
+        background-color: transparent;
+        border: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .extra_content {
+      display: none;
+    }
+    .read_more {
+      display: block;
+    }
+  }
+  
+.show {
+    display: block!important;
+}

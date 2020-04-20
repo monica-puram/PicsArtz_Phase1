@@ -8,8 +8,10 @@ function HeaderContent(){
             </div>
             <div className='threeColGrid'>
                 <div className='column1 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4'>
-                    <h3>What can we do?</h3>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,</p>
+                    <h3 className = 'headingContent'>What can we do?</h3>
+                    <hr/>
+                    <p>We're specialized in photo editing and video editing of content of pretty much any occasion, leveraging industry standard software Adobe Photoshop and Apple's Final Cut Pro X.
+                        Cherish a well-documented photographs and videos from us. </p>
                 </div>
                 <div className='column2 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4'>
                     <img src= 'http://localhost:3000/thumbnail1.jpg' alt='thumbnail'></img>

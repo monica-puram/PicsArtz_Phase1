@@ -490,13 +490,13 @@
   margin: 10px;
   border-radius: 5px;
   padding: 5px;
-  -webkit-transition: margin;
-  transition: margin;
 }
 
 .careers .panel .location {
-  color: #ec8f25;
   font-size: small;
+  color: #325050;
+  background: #fff;
+  font-family: 'Libre Baskerville', sans-serif;
 }
 
 .careers .panel a {
@@ -508,7 +508,6 @@
 }
 
 .careers .panel:hover {
-  margin: 15px;
   background-color: rgba(252, 188, 71, 0.5);
 }
 
@@ -567,6 +566,7 @@
   padding: 20px;
   border: 1px solid #888;
   width: 50%;
+  /* The Close Button */
 }
 
 .modal-content #dialogHeading {
@@ -579,12 +579,7 @@
   color: red;
 }
 
-.modal.modal-open {
-  display: block;
-}
-
-/* The Close Button */
-.close {
+.modal-content .close {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
@@ -595,10 +590,46 @@
   background-color: transparent;
 }
 
-.close:hover,
-.close:focus {
+.modal-content .close:hover, .modal-content .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.modal.modal-open {
+  display: block;
+}
+
+.headingContent {
+  padding-top: 20px;
+  color: #325050;
+  background: #fff;
+  font-family: 'Libre Baskerville', sans-serif;
+}
+
+.read_more {
+  display: none;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  color: #ec8f25;
+}
+
+.read_more:active {
+  background-color: transparent;
+  border: none;
+}
+
+@media (max-width: 650px) {
+  .extra_content {
+    display: none;
+  }
+  .read_more {
+    display: block;
+  }
+}
+
+.show {
+  display: block !important;
 }
 /*# sourceMappingURL=styles.css.map */
