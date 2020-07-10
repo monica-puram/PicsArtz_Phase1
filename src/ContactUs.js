@@ -33,7 +33,7 @@ class ContactUs extends React.Component{
             phone: this.state.phone,
             comments: this.state.comments
         }
-        axios.post('http://localhost:3001/contactInfo', data)
+        axios.post('http://picsartz.com:3001/contactInfo', data)
             .then(response=>{
                 if(response.status === 200) 
                     //toggleModal('Submitted successfully', 'Success!');

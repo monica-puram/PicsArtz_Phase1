@@ -4,13 +4,17 @@ var app = express();
 var multer = require('multer')
 var cors = require('cors');
 var fs = require('fs');
+const path = require('path');
 app.use(cors());
 app.use(express.json()) // for parsing application/json
-app.use(express.static(__dirname + '/public'));
+//app.use(express.static(__dirname + '/public_html'));
+
+//app.use('/home', express.static(path.join(__dirname, 'public_html', 'index.html')));
+
 app.use(bodyParser.urlencoded({ extended: true }));
+
 app.listen(3001);
-
-
+console.log("Server started .. Current dir : "+__dirname+" , "+__filename);
 
 //ContactUs
 app.post('/contactInfo',function(req,response) {
@@ -40,6 +44,7 @@ app.post('/applyNow',function(req,response){
         fs.mkdirSync(path);
     }
       callback(null, path);
+      console.log(path.toString)
     },
   filename: function (req, file, cb) {
     cb(null, file.originalname)
@@ -70,6 +75,18 @@ app.post('/applyNow',function(req,response){
     
   return response.status(200).send(req.file)
 
-})
+ })
 })
 
+app.use(express.static(path.join(__dirname, 'public_html')));
+app.get('*', (req,res) => {
+  console.log("DirName :", __dirname+" Request : "+JSON.stringify(req.body));
+  console.log("Sending file : "+__dirname+'/public_html/index.html');
+  res.status(200).sendFile(path.resolve(__dirname, "public_html", "index.html"));
+});
+
+//app.use((req, res, next) => {
+ //res.sendFile(path.resolve(__dirname, 'public_html', 'index.html'));
+//})
+
+ 

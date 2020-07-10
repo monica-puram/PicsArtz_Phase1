@@ -31,7 +31,7 @@ class CareersForm extends React.Component{
         data.append("file", this.state.resume);
         data.append("firstName", this.state.firstName);
         data.append("lastName", this.state.lastName);
-        axios.post('http://localhost:3001/applyNow', data)
+        axios.post('http://picsartz.com:3001/applyNow', data)
             .then(response=>{
                     if(response.status === 200) 
                         //toggleModal('Submitted successfully', 'Success!');

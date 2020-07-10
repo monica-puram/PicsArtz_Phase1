@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  background-color: beige;
+}
+
 .navbar {
   background-color: rgba(252, 188, 71, 0.5);
   height: 60px;
@@ -91,7 +95,7 @@
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .nav {
     display: none;
     width: 100%;
@@ -102,7 +106,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .nav.responsive {
     position: relative;
     display: block;
@@ -176,12 +180,16 @@
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
+  border-radius: 0 0 3px 3px;
 }
 
 .headerContent .threeColGrid {
   border: 1px solid #ec8f25;
   margin-top: 30px;
   display: inline-block;
+  border-radius: 3px;
+  -webkit-box-shadow: 5px 5px rgba(146, 142, 80, 0.2);
+          box-shadow: 5px 5px rgba(146, 142, 80, 0.2);
 }
 
 .headerContent .threeColGrid .column1 {
@@ -407,7 +415,8 @@
   margin-top: 90px;
 }
 
-.form-parent-div input[type="text"], .form-parent-div [type="email"] {
+.form-parent-div input[type="text"],
+.form-parent-div [type="email"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -416,7 +425,7 @@
   border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font: 1rem 'Fira Sans', sans-serif;
+  font: 1rem "Fira Sans", sans-serif;
 }
 
 .form-parent-div input[type="select"] {
@@ -428,7 +437,7 @@
   border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font: 1rem 'Fira Sans', sans-serif;
+  font: 1rem "Fira Sans", sans-serif;
 }
 
 .form-parent-div input[type="tel"] {
@@ -440,19 +449,19 @@
   border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font: 1rem 'Fira Sans', sans-serif;
+  font: 1rem "Fira Sans", sans-serif;
 }
 
 .form-parent-div input:invalid + span:after {
   position: absolute;
-  content: '✖';
+  content: "✖";
   padding-left: 5px;
   color: #8b0000;
 }
 
 .form-parent-div input:valid + span:after {
   position: absolute;
-  content: '✓';
+  content: "✓";
   padding-left: 5px;
   color: #009000;
 }
@@ -496,7 +505,7 @@
   font-size: small;
   color: #325050;
   background: #fff;
-  font-family: 'Libre Baskerville', sans-serif;
+  font-family: "Libre Baskerville", sans-serif;
 }
 
 .careers .panel a {
@@ -590,7 +599,8 @@
   background-color: transparent;
 }
 
-.modal-content .close:hover, .modal-content .close:focus {
+.modal-content .close:hover,
+.modal-content .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -601,10 +611,10 @@
 }
 
 .headingContent {
-  padding-top: 20px;
+  padding-top: 24px;
   color: #325050;
-  background: #fff;
-  font-family: 'Libre Baskerville', sans-serif;
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 30px;
 }
 
 .read_more {
